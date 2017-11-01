@@ -1,0 +1,26 @@
+{
+  "name": "angular1",
+  "version": "1.0.0",
+  "description": "just awebsite",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "aos": "^2.2.0",
+    "gulp": "^3.9.1",
+    "nprogress": "^0.2.0",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "prabeen",
+  "license": "ISC"
+}

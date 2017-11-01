@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="result" style="height: 400px; background: #dddddd;">jhgh</div>
+
+<button onclick="startMagic()">start recording</button>
+
+<script type="text/javascript">
+var result = document.getElementById('result');
+
+function startMagic(){
+	console.log( new window.webkitSpeechRecognition);
+		//alert('hjhykyt');
+if(webkitSpeechRecognition in window){
+	var recognition = new window.webkitSpeechRecognition();
+recognition.lang = 'en-US';
+recognition.continuous = true;
+recognition.interimResults = true;
+recognition.maxAlternatives = 5;
+recognition.start();
+
+var finalTranscript = '';
+recognition.onresult = function(event) {
+	alert('dydtyurtut');
+	var interimTranscript = '';
+	for(var i = event.resultIndex; i < event.results.length; i++){
+		var transcript = event.results[i][0].transcript;
+		if(event.results[i].isFinal){
+			finalTranscript += transcript;
+		}else{
+			interimTranscript += transcript;
+		}
+	}
+	result.innerHTML = finalTranscript + interimTranscript;
+    console.log('You said: ', event.results[0][0].transcript);
+}
+}else{
+	alert('not present');
+}
+}
+</script>
+</body>
+</html>
+

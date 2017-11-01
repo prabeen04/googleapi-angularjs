@@ -1,0 +1,31 @@
+{
+    "entries" : [
+        {
+        "Name" : "Entry One",
+        "Department" : "Department A",
+        "Number" : [
+            {
+                "Name" : "Front Line",
+                "Phone" : "1234567890",
+                "Tieline" : "84543982"
+            },
+            {
+                "Name" : "Back Line",
+                "Phone" : "1243568790",
+                "Tieline" : "58472989"
+            }
+        ],
+        "Hours" :
+            {
+                "Sunday" : false, 
+                "Monday" : "9AM – 6PM", 
+                "Tuesday" : "9AM – 6PM", 
+                "Wednesday" : "9AM – 6PM", 
+                "Thursday" : "9AM – 6PM", 
+                "Friday" : "9AM – 6PM", 
+                "Saturday" : "9AM – 6PM"
+            },
+        "Description" : "…"
+    }
+    ]
+}
